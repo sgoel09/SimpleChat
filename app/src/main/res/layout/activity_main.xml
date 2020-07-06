@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlSend"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btSend"
+            android:layout_toLeftOf="@+id/btSend"
+            android:gravity="top"
+            android:hint="Say anything!"
+            android:imeOptions="actionSend"
+            android:inputType="textShortMessage" />
+
+        <Button
+            android:id="@+id/btSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="send"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
