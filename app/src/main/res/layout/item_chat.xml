@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/ivProfileOther"
-        android:contentDescription="Other Profile Pic"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@mipmap/ic_launcher" />
+        android:contentDescription="Other Profile Pic"
+        tools:srcCompat="@tools:sample/avatars" />
     <TextView
         android:textSize="18sp"
         android:id="@+id/tvBody"
@@ -23,10 +23,11 @@
         android:layout_height="64dp"
         android:layout_weight="1">
     </TextView>
+
     <ImageView
         android:id="@+id/ivProfileMe"
-        android:contentDescription="My Profile Pic"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@mipmap/ic_launcher" />
+        android:contentDescription="My Profile Pic"
+        tools:srcCompat="@tools:sample/avatars" />
 </RelativeLayout>
